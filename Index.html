@@ -1,52 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, inicial-scale=1.0">
-        <link rel="stylesheet" href="./styles/styles.css">
-        <title>Unflix</title>
-    </head>
-    <body class="body">
-        <header class="header">
-            <div class="titulo">
-                <h1>Unflix</h1>
-            </div>
-            
-            
-            <nav class="opciones">   
-                <a class="opcion" href="./Index.html">Home</a>
-                <a class="opcion" href="">Series</a>
-                <a class="opcion" href="">Pelicula</a>
-                <a class="opcion" href="">Perfil</a>
-            </nav>
-        </header>
-        <main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Principal</title>
+</head>
 
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./pages/principalSerie.html">Series</a>
+        <a href="./pages/principalPelicula.html">Peliculas</a>
+        <a href="./pages/perfil.html">Perfil</a>
+    </nav>
+    <section class="categoriaBuscador">
+        <div>
+            <label for="categoria">Categorias: </label>
+            <select name="selectCat">
+                <option value="cat1">Accion</option>
+                <option value="cat2">Drama</option>
+                <option value="cat3">Fantasia</option>
+            </select>
+        </div>
+        <input type="search" id="busqueda" placeholder="Buscar por nombre">
+    </section>
+    <section class="sectionImagenes">
+        <article class="gridImagenes">
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli1"></div>
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli2"></div>
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli3"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie1"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie2"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie3"></div>
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli1"></div>
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli2"></div>
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli3"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie1"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie2"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie3"></div>
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli1"></div>
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli2"></div>
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli3"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie1"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie2"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie3"></div>
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli1"></div>
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli2"></div>
+            <div class="gridItem"><img src="./assets/images/img_peli.png" alt="peli3"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie1"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie2"></div>
+            <div class="gridItem"><img src="./assets/images/img_serie.png" alt="serie3"></div>
+        </article>
+    </section>
+</body>
 
-
-            <aside class="aside">
-                <div class="buscador">
-                    <input type="text" placeholder="Search...">
-                    <button>
-                        x
-                    </button>
-                </div>
-    
-    
-                <div class="categorias">
-                    <label for="categorias">Categorias</label>
-                    <select name="categorias" id="categorias">
-                        <option value="" selected>Select</option>
-                        <option value="1">Accion</option>
-                        <option value="2">Romance</option>
-                        <option value="3">Thriller</option>
-                        <option value="4">Terror</option>
-                    </select>
-                </div>
-            </aside>
-
-
-        </main>
-    </body>
 </html>
