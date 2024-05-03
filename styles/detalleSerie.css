@@ -34,7 +34,7 @@
     background-color: crimson;
     border: 2px solid white;
     margin: 20px;
-padding: 20px;
+    padding: 20px;
 }
 
 button{
@@ -57,4 +57,19 @@ button{
         justify-items: center;
         align-items: center;
     }
-  }
+}
+
+@media screen and (max-width: 500px) {
+    button{
+        width: 250px;
+    }
+    .descrip{
+        width: 250px;
+    }
+    .articleDetalleGrid{
+        grid-template-rows: 400px 350px 150px;
+    }
+    iframe{
+        width: 300px;
+    }
+}
